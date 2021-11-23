@@ -3,7 +3,8 @@ let express = require('express');
 const app = express();
 const port = process.env.PORT || 3000;
 const mongoose = require('mongoose');
-const Task = require('./api/models/productModel.js'); 
+const Product = require('./api/models/productModel.js'); 
+const Order = require('./api/models/orderModel'); 
 const bodyParser = require('body-parser');
 
 app.use(function (req, res, next) {
